@@ -5,3 +5,4 @@ def is_isbn_or_key(word):
     short_q =  word.replace('-','')
     if '-' in word and len(short_q) == 10 and short_q.isdigit:
         isbn_or_key = 'isbn'
+    return isbn_or_key
