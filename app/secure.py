@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://fisher:fisher@127.0.0.1:3306/fisher'
