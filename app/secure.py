@@ -1,1 +1,2 @@
-SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://fisher:fisher@127.0.0.1:3306/fisher'
+SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://fisher:fisher@172.16.70.109:3306/fisher'
+SQLALCHEMY_TRACK_MODIFICATIONS  = True
