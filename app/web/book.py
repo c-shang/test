@@ -2,7 +2,7 @@
 # created at 2018/7/19.
 import json
 
-from flask import jsonify,request
+from flask import jsonify,request,render_template
 from app.libs.helper import is_isbn_or_key
 from app.spider.yushu_book import YuShuBook
 
@@ -38,3 +38,11 @@ def search():
         return jsonify(form.errors)
     # return json.dumps(result),200,{'content-type':'application/json'}
 
+
+@web.route('/test')
+def test():
+    r = {
+        'name':'c-shang',
+        'age':18
+    }
+    return render_template('test.html',data=r)
